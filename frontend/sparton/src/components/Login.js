@@ -7,9 +7,10 @@ const Login = () => {
         <div>
             <form>
                 <label>
-                    Login
+                    User Login
                 </label>
-                <input type="text"></input>
+                <input type="text">Username</input>
+                <input type="text">Password</input>
             </form>
         </div>
     )
