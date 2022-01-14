@@ -1,0 +1,11 @@
+{
+  "name": "sparton",
+  "version": "1.0.0",
+  "description": "coursera for mma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ambrose Hundal",
+  "license": "ISC"
+}
