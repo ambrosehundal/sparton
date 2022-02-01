@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { Form, Button } from "react-bootstrap";
 
 
 const Register = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [register, setRegister] = useState(false);
+
     return (
         <>
         <h2>Register</h2>
