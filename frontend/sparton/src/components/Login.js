@@ -9,8 +9,8 @@ const Login = () => {
                 <label>
                     User Login
                 </label>
-                <input type="text">Username</input>
-                <input type="text">Password</input>
+                <input type="text"/>Username
+                <input type="text"/>Password
             </form>
         </div>
     )
