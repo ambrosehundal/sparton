@@ -1,4 +1,5 @@
 const express = require('express');
+const User = require('./models/User.js');
 
 const mongoose = require('mongoose');
 
@@ -30,6 +31,21 @@ app.get('/api/courses', function(req, res) {
   
 app.get('/', (req, res) => {
     res.send('Best MMA online course in the world!')
+});
+
+
+app.post('api/register', (req, res) => {
+    const {email, password} = req.body;
+    const currentUser = new User({ email, password });
+    currentUser.save(err => {
+        if(err){
+            res.status(500).send("Error registering new user, please try again");
+        }
+        else{
+            res.status(200).send("Successfully registered");
+        }
+    })
+
 });
 
 app.listen(3000, () => {
