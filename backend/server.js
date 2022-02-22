@@ -1,5 +1,6 @@
 const express = require('express');
 const User = require('./models/User.js');
+const cookieParser = require('cookie-parser');
 
 const mongoose = require('mongoose');
 
@@ -15,6 +16,8 @@ const mongoDbUri = 'mongodb://localhost/react-authentication';
 
 
 const app = express();
+
+app.use(cookieParser());
 
 
 app.get('/api/home', (req, res) => {
